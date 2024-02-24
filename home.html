@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>home</title>
+        <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href ="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="home.html"> <i class= "fas fa-home"></i> <span>home</span></a>
+            <a href="projects.html"> <i class= "fas fa-project-diagram"></i> <span>projects</span></a>
+            <a href="research.html"> <i class= "fa-solid fa-brain"></i> <span>research</span></a>
+            <a href="achievements.html"> <i class= "fas fa-trophy"></i> <span>achievements</span></a>
+            <a href="contact.html"> <i class= "fa fa-address-book"></i> <span>connect with me</span></a>
+        </nav>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/1.jpg" alt="Slide 1">
+                    <div class="text">Convocation</div>
+                  </div>
+                  <div class="slide">
+                    <img src="images/2.jpg" alt="Slide 2">
+                    <div class="text">Udaan'22</div>
+                  </div>
+                  <div class="slide">
+                    <img src="images/3.jpg" alt="Slide 3">
+                    <div class="text">Dean's list award</div>
+                  </div>
+                  <div class="slide">
+                    <img src="images/4.jpg" alt="Slide 4">
+                    <div class="text">InterIIT Tech Meet'19</div>
+                  </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+          </div>
+        <div class="content">
+            <p1>
+                Neel Patel
+            </p1>
+            <span>
+                Software Development Engineer
+            </span>
+            <p>
+                Hey there! I'm currently thriving in the fast-paced world of technology as a Software Engineer at GreyOrange. I absolutely love tackling problems and delving into complex puzzles, whether it's debugging code or crafting innovative solutions.
+            </p>
+            <p>
+My journey kicked off at the esteemed Indian Institute of Technology Gandhinagar, where I studied Mechanical Engineering with minor in Computer Science and Engineering. This unique combo gave me a wide range of skills, which I bring to the table every day in my software development work.
+</p>
+<p>
+I'm fueled by a burning desire to make a real difference in the tech world. My goal is to create software products that not only meet but exceed the constantly changing needs of users. With a commitment to learning and pushing boundaries, I strive to be a leader in shaping the future of technology.
+</p>
+<p>
+Come along with me on this thrilling adventure, where each challenge is a chance to innovate and every line of code brings us one step closer to a brighter future.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/neel-patel-59a173170" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/neel3998" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/neel.3998" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <script>
+            let slideIndex = 0;
+            showSlide(slideIndex); // Show the first slide initially
+
+            function showSlide(n) {
+            const slides = document.querySelectorAll('.slides img');
+            if (n >= slides.length) { slideIndex = 0; }
+            if (n < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[slideIndex].style.display = 'block';
+            }
+
+            function prevSlide() {
+            showSlide(slideIndex -= 1);
+            }
+
+            function nextSlide() {
+            showSlide(slideIndex += 1);
+            }
+
+            function autoSlide() {
+            nextSlide();
+            }
+
+            setInterval(autoSlide, 4000); // Change slide every 4 seconds
+            
+
+        </script>
+    </body>
+</html>
