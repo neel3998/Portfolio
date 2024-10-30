@@ -197,21 +197,24 @@ section {
     display: none;
   }
   .slider {
-    width: auto; /* Set slider and content to full width on mobile devices */
+    width: 80%; /* Set slider and content to full width on mobile devices */
     max-width: none; /* Remove max-width on mobile devices */
     float: none; /* Remove float on mobile devices */
-    margin-right: 5%;
+    left: 10%;
+    margin-top: 20%;
+    
   }
   .content {
-    width: 100%; /* Set slider and content to full width on mobile devices */
+    width: 90%; /* Set slider and content to full width on mobile devices */
     max-width: none; /* Remove max-width on mobile devices */
     float: none; /* Remove float on mobile devices */
   }
   .content {
     position: relative; /* Change content position to relative on mobile devices */
     top: auto;
-    right: auto;
+    
     padding: 20px; /* Add padding to content on mobile devices */
+    margin-right: 20px;
   }
 }
 .navbar a:hover {
@@ -225,3 +228,106 @@ section {
 }
 
 /*# sourceMappingURL=style.css.map */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.projects-section {
+  padding: 2rem 9%;
+  background: #e0dbd1;
+}
+
+.section-title {
+  font-size: 3rem;
+  color: #6e5f56;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #6e5f56;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  color: #6e5f56;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.4rem;
+  color: #4f1e15;
+  margin-bottom: 1.5rem;
+  text-transform: none;
+}
+
+.project-links .button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #d3b0aa;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.project-links .button i {
+  margin-left: 5px;
+}
+
+.project-links .button:hover {
+  background-color: #6e5f56;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .project-image {
+    height: auto;
+    object-fit: contain;
+  }
+}
