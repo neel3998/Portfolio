@@ -1,0 +1,89 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Experience Page Styles */
+  .experience-page {
+    padding: 2rem 8%;
+    background: #f3f1ed;
+  }
+  
+  .experience-main-title {
+    font-size: 3rem;
+    color: #635a53;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .job-section {
+    margin-top: 3rem;
+  }
+  
+  .job-section-title {
+    font-size: 2.5rem;
+    color: #635a53;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .job-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .job-card {
+    background: #fff;
+    border: 1px solid #8c7c6d;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .role-title {
+    font-size: 2rem;
+    color: #6d5246;
+    margin-bottom: 0.5rem;
+  }
+  
+  .employer-name {
+    font-size: 1.8rem;
+    color: #8c7c6d;
+    font-weight: bold;
+  }
+  
+  .employment-duration {
+    font-size: 1.4rem;
+    color: #8c7c6d;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .role-description {
+    font-size: 1.4rem;
+    color: #6d5246;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .experience-main-title {
+      font-size: 2.5rem;
+    }
+  
+    .job-section-title {
+      font-size: 2rem;
+    }
+  
+    .role-title {
+      font-size: 1.8rem;
+    }
+  
+    .employer-name, .employment-duration, .role-description {
+      font-size: 1.4rem;
+    }
+  }
+  

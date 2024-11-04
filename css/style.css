@@ -237,14 +237,15 @@ body, html {
 
 .projects-section {
   padding: 2rem 9%;
-  background: #e0dbd1;
+
 }
 
 .section-title {
-  font-size: 3rem;
+  margin-top: 5rem;
+  font-size: 7rem;
   color: #6e5f56;
   text-align: center;
-  margin-bottom: 1.5rem;
+  text-transform: none;
 }
 
 .projects-container {
@@ -329,5 +330,143 @@ body, html {
   .project-image {
     height: auto;
     object-fit: contain;
+  }
+}
+
+
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f1ed;
+  color: #635a53;
+}
+
+/* Header */
+.experience-header {
+  background-color: #8c7c6d;
+  padding: 1rem 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-header h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.experience-header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.experience-header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.experience-header nav a:hover {
+  color: #d8c3b1;
+}
+
+/* Experience Page Styles */
+.experience-page {
+  padding: 2rem 8%;
+}
+
+.experience-main-title {
+  font-size: 3.5rem;
+  color: #635a53;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.job-section {
+  margin-top: 3rem;
+}
+
+.job-section-title {
+  font-size: 2.5rem;
+  color: #6d5246;
+  margin-bottom: 1.2rem;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.job-card {
+  background-color: #ffffff;
+  border: 1px solid #8c7c6d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.role-title {
+  font-size: 2rem;
+  color: #6d5246;
+  margin-bottom: 0.5rem;
+}
+
+.employer-name {
+  font-size: 1.8rem;
+  color: #8c7c6d;
+  font-weight: bold;
+}
+
+.employment-duration {
+  font-size: 1.5rem;
+  color: #8c7c6d;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.role-description {
+  font-size: 1.3rem;
+  list-style-type: disc; /* Disc-style bullet points */
+  padding-left: 1.5rem; /* Indent bullets for readability */
+  color: #6d5246;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.role-description li {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experience-header h1 {
+    font-size: 2rem;
+  }
+
+  .experience-header nav a {
+    font-size: 1rem;
+  }
+
+  .experience-main-title {
+    font-size: 2rem;
+  }
+
+  .job-section-title {
+    font-size: 1.8rem;
+  }
+
+  .role-title {
+    font-size: 1.5rem;
+  }
+
+  .employer-name,
+  .employment-duration,
+  .role-description {
+    font-size: 1.2rem;
   }
 }
