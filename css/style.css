@@ -127,7 +127,7 @@ section {
   float: right; /* Float the content to the right */
   left: 5%;
   margin-right: 7%;
-  margin-top: 5%;
+  margin-top: 8%;
   transition: visibility 0.3s ease;
 }
 .content p1 {
@@ -215,6 +215,9 @@ section {
     
     padding: 20px; /* Add padding to content on mobile devices */
     margin-right: 20px;
+  }
+  .content p1 {
+    font-size: 4rem;
   }
 }
 .navbar a:hover {
@@ -324,6 +327,7 @@ body, html {
   }
   
   .section-title {
+    margin-top: 7.5rem;
     font-size: 2.5rem;
   }
 
@@ -457,7 +461,8 @@ body, html {
   }
 
   .experience-main-title {
-    font-size: 2rem;
+    margin-top: 7.5rem;
+    font-size: 2.5rem;
   }
 
   .job-section-title {
