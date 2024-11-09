@@ -213,7 +213,7 @@ section {
     position: relative; /* Change content position to relative on mobile devices */
     top: auto;
     
-    padding: 20px; /* Add padding to content on mobile devices */
+    padding: 5px; /* Add padding to content on mobile devices */
     margin-right: 20px;
   }
   .content p1 {
@@ -244,6 +244,7 @@ body, html {
 }
 
 .section-title {
+  margin-top: 5rem;
   font-size: 7rem;
   color: #6e5f56;
   text-align: center;
@@ -382,6 +383,7 @@ body, html {
 }
 
 .experience-main-title {
+  margin-top: 5rem;
   font-size: 3.5rem;
   color: #635a53;
   margin-bottom: 1.5rem;
