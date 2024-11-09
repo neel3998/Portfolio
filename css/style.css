@@ -244,8 +244,8 @@ body, html {
 }
 
 .section-title {
-  margin-top: 5rem;
-  font-size: 7rem;
+  margin-top: 7rem;
+  font-size: 3.5rem;
   color: #6e5f56;
   text-align: center;
   text-transform: none;
@@ -383,7 +383,7 @@ body, html {
 }
 
 .experience-main-title {
-  margin-top: 5rem;
+  margin-top: 7rem;
   font-size: 3.5rem;
   color: #635a53;
   margin-bottom: 1.5rem;
